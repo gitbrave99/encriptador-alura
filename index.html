@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/Logo.png">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="assets/Logo.png" alt="logo alura">
+    </nav>
+
+    <div class="container">
+        <div id="message">
+            <div style="width: 90%;">
+                <!-- <input type="text"  class="form-control" placeholder="Ingrese el texto aqui"> -->
+                <textarea name="" id="inputtext" class="form-control" cols="30" rows="9"
+                    placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="indicator">
+                <div class="msg">
+                    <img src="assets/Vector.png" alt=""> <span class="text-gray-400">Solo letras minúsculas y sin
+                        acentos</span>
+                </div>
+                <div class="buttons">
+                    <div><button type="button" id="btnEncrypt" class="btn btn-primary">Encriptar</button></div>
+                    <div>
+                        <button type="button" id="btnDecrypt" class="btn btn-secondary">Desencriptar</button>
+                    </div>
+                    <div>
+                        <button type="button" id="btnReset" class="btn btn-reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="result">
+            <p id="resultencdes"></p>
+            <div id="wrong-message">
+                <div>
+                    <img src="assets/Muñeco.png" id="doll" alt="wrong">
+                </div>
+                <h3 class="text-gray-500">Ningún mensaje fue encontrado</h3>
+                <p class="text-gray-400">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </div>
+        </div>
+
+    </div>
+<script src="js/CipherUtility.js"></script>
+<script src="js/FormManage.js"></script>
+</body>
+
+</html>
